@@ -68,10 +68,9 @@ it is easy to use sref, aref, href to know the ref type
     return true if the arg is a array ref
 
 =head2 href
+
     accept one and only one argument, otherwise die
     return true if the arg is a hash ref
-
-=head1 DESCRIPTION
 
 =head1 AUTHOR
 
