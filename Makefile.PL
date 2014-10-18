@@ -7,7 +7,7 @@ WriteMakefile(
     VERSION_FROM      => 'lib/Scalar/RefType.pm', # finds $VERSION, requires EU::MM from perl >= 5.5
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/Scalar/RefType.pm', # retrieve abstract from module
-    AUTHOR            => 'Hao Wu <hwu@localdomain>',
+    AUTHOR            => 'Hao Wu <echowuhao@gmail.com>',
     #LICENSE           => 'perl',
     #Value must be from legacy list of licenses here
     #http://search.cpan.org/perldoc?Module%3A%3ABuild%3A%3AAPI

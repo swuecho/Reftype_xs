@@ -32,46 +32,50 @@ XSLoader::load('Scalar::RefType', $VERSION);
 # Preloaded methods go here.
 
 1;
+
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
-Scalar::RefType - Perl extension for blah blah blah
+Scalar::RefType - Perl extension for getting the reftype of a scalar ref
 
 =head1 SYNOPSIS
 
   use Scalar::RefType;
-  blah blah blah
+  my $x = \1;
+  my $y = ['a' .. 'z'];
+  my $z = { a => 1, b => 2};
+
+  ok(sref($x),"scalar ref");
+  ok(aref($y),"array ref");
+  ok(href($z),"hash ref");
 
 =head1 DESCRIPTION
 
-Stub documentation for Scalar::RefType, created by h2xs. It looks like the
-author of the extension was negligent enough to leave the stub
-unedited.
+Perl extension for getting the reftype of a scalar ref. given a ref,
+it is easy to use sref, aref, href to know the ref type
 
-Blah blah blah.
+=head1 EXPORT
 
-=head2 EXPORT
+=head2 sref
 
-None by default.
+    accept one and only one argument, otherwise die
+    return true if the arg is a scalar ref
 
+=head2 aref
 
+    accept one and only one argument, otherwise die
+    return true if the arg is a array ref
 
-=head1 SEE ALSO
+=head2 href
+    accept one and only one argument, otherwise die
+    return true if the arg is a hash ref
 
-Mention other useful documentation such as the documentation of
-related modules or operating system documentation (such as man pages
-in UNIX), or any relevant external documentation such as RFCs or
-standards.
-
-If you have a mailing list set up for your module, mention it here.
-
-If you have a web site set up for your module, mention it here.
+=head1 DESCRIPTION
 
 =head1 AUTHOR
 
-Hao Wu, E<lt>hwu@localdomainE<gt>
+Hao Wu E<lt>echowuhao@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
