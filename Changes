@@ -1,0 +1,6 @@
+Revision history for Perl extension Scalar::RefType.
+
+0.01  Sat Oct 18 01:56:49 2014
+	- original version; created by h2xs 1.23 with options
+		-A -n Scalar::RefType
+
