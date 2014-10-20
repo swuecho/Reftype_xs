@@ -1,5 +1,12 @@
 language: perl
 perl:
+  - "5.20"
   - "5.18"
   - "5.16"
   - "5.14"
+notifications:
+  recipient:
+   - echowuhao@gmail.com
+  email:
+    on_success: change
+    on_failure: always
